@@ -46,3 +46,24 @@ STILL TO REPLACE WITH REAL CONTENT (search the HTML for square brackets [ ])
     the folder and replace the placeholder box with an <img src="photo.jpg" alt="...">
   - Phone number +234 803 123 4567 and the address were copied from the old site.
     Confirm they are correct (the phone number looks like a sample).
+
+ADDING YOUR REAL PHOTOS TO THE GALLERIES
+  Every gallery slide opens full screen when clicked or tapped (with next/previous,
+  swipe, arrow keys and Esc to close). To use a real photo, open the page (for example
+  ewekoro.html), find a slide, which looks like
+     <div style="flex:none;width:100%;...">  ...icon...  </div>
+  and replace it with
+     <div style="flex:none;width:100%;aspect-ratio:16/9;background:#0c0e10">
+       <img src="ewekoro-1.jpg" alt="Describe the photo" style="width:100%;height:100%;object-fit:cover;display:block">
+     </div>
+  Put the photo file in the same folder as the pages. Use JPG files about 1600px wide
+  and compressed (under 300 KB each) so pages load fast on phones.
+  Any single <img> you add elsewhere also opens full screen when clicked.
+
+SOCIAL MEDIA LINKS
+  The icons in the footer of every page and on contact.html currently link to each
+  platform's home page. Replace them with your real page links. Search all the .html
+  files for these and swap in your own address:
+     https://www.facebook.com/      https://www.instagram.com/
+     https://www.linkedin.com/      https://x.com/      https://www.youtube.com/
+  Delete any icon you do not use (each is one <a> ... </a> inside class="social").
